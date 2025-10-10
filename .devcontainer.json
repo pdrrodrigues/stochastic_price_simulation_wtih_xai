@@ -1,0 +1,6 @@
+{
+  "name": "stochastic_price_simulation_with_xai",
+  "workspaceFolder": "/app",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev"
+}
