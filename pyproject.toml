@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "stochastic_price_simulation_surrogate_model_xai"
+version = "0.1.0"
+description = "Stochastic price simulation with ML surrogates and XAI"
+authors = ["Pedro Romero Rodrigues pedroromerorodrigues@outlook.com.br"]
+readme = "README.md"
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+# Core scientific computing
+numpy = "1.26.4"
+scipy = "1.14.1"
+pandas = "2.2.2"
+
+# Plotting / visualization
+matplotlib = "3.9.2"
+
+# Stats / econometrics
+statsmodels = "0.14.3"
+arch = "6.3.0"
+
+# Machine learning
+scikit-learn = "1.5.2"
+xgboost = "2.1.1"
+
+# Explanaible AI
+shap = "0.46.0"
+lime = "0.2.0.1"
+
+# Dev tools
+pytest = "^8.3.3"
+black = "^24.8.0"
+ruff = "^0.6.9"
+pre-commit = "^4.0.1"
+sphinx = "^7.4.7"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
