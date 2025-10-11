@@ -1,6 +1,16 @@
 {
-  "name": "stochastic_price_simulation_with_xai",
-  "workspaceFolder": "/app",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "dev"
+    "name": "stochastic_xai_dev",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "dev",
+    "workspaceFolder": "/app",
+    "remoteUser": "devuser",
+
+    "containerEnv": {
+        "SHELL": "/bin/sh"
+    },
+
+    "userEnvProbe": "interactiveShell",
+    "overrideCommand": false,
+
+    "postStartCommand": "echo 'Dev container started with sh.'"
 }

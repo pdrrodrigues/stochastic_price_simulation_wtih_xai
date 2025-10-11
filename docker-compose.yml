@@ -1,12 +1,13 @@
 version: "3.9"
 services:
-  dev:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - .:/app
-      - ~/.cache/pip:/root/.cache/pip
-    working_dir: /app
-    tty: true
-    stdin_open: true
+    dev:
+        container_name: stochastic_xai_dev
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - .:/app
+            - ~/.cache/pip:/root/.cache/pip
+        working_dir: /app
+        tty: true
+        stdin_open: true
