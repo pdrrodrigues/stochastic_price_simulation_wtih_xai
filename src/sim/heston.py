@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-def simulate_heston(
+def heston(
     S0: float = 100.0,
     v0: float = 0.04,
     mu: float = 0.0,
